@@ -8,10 +8,9 @@
 ::
 ::   IDM Activation Script (IAS)
 ::
-::   Homepages: https://github.com/lstprjct/IDM-Activation-Script
-::              https://t.me/ModByPiash/5
+::   Homepages: https://github.com/wiobr21/IDM-Activation
 ::
-::       Telegram: @Stripe_op
+::       Github: @wiobr21
 ::
 ::============================================================================
 
