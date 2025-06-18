@@ -370,29 +370,25 @@ if not defined terminal mode 75, 28
 
 echo:
 echo:
-call :_color2 %_White% "             " %_Green% "Create By Piash"
-echo:            ___________________________________________________ 
-echo:
-echo:               Telegram: @ModByPiash
-echo:               Github: https://github.com/lstprjct
+call :_color2 %_White% "             " %_Green% "由 𝓌𝑜𝒷 制作"
 echo:            ___________________________________________________ 
 echo:                                                               
-echo:               [1] Activate
-echo:               [2] Freeze Trial
-echo:               [3] Reset Activation / Trial
+echo:               [1] 激活 IDM
+echo:               [2] 冻结试用期
+echo:               [3] 重置激活/试用
 echo:               _____________________________________________   
 echo:                                                               
-echo:               [4] Download IDM
-echo:               [5] Help
-echo:               [0] Exit
+echo:               [4] 下载 IDM
+echo:               [5] 帮助
+echo:               [0] 退出
 echo:            ___________________________________________________
 echo:         
-call :_color2 %_White% "             " %_Green% "Enter a menu option in the Keyboard [1,2,3,4,5,0]"
+call :_color2 %_White% "             " %_Green% "请输入选项 [1,2,3,4,5,0]"
 choice /C:123450 /N
 set _erl=%errorlevel%
 
 if %_erl%==6 exit /b
-if %_erl%==5 start https://github.com/lstprjct/IDM-Activation-Script & goto MainMenu
+if %_erl%==5 start https://github.com/wiobr21/IDM-Activation/wiki & goto MainMenu
 if %_erl%==4 start https://www.internetdownloadmanager.com/download.html & goto MainMenu
 if %_erl%==3 goto _reset
 if %_erl%==2 (set frz=1&goto :_activate)
