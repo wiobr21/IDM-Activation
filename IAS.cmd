@@ -370,7 +370,7 @@ if not defined terminal mode 75, 28
 
 echo:
 echo:
-call :_color2 %_White% "             " %_Green% "由 𝓌𝑜𝒷 制作"
+call :_color2 %_White% "             " %_Green% "Create By 𝓌𝑜𝒷"
 echo:            ___________________________________________________ 
 echo:                                                               
 echo:               [1] 激活 IDM
