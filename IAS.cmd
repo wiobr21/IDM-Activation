@@ -387,7 +387,7 @@ choice /C:123450 /N
 set _erl=%errorlevel%
 
 if %_erl%==6 exit /b
-if %_erl%==5 start https://github.com/lstprjct/IDM-Activation-Script & goto MainMenu
+if %_erl%==5 start https://idm.wobys.dpdns.org/ & goto MainMenu
 if %_erl%==4 start https://www.internetdownloadmanager.com/download.html & goto MainMenu
 if %_erl%==3 goto _reset
 if %_erl%==2 (set frz=1&goto :_activate)
@@ -449,7 +449,7 @@ for %%# in (
 ""HKCU\Software\DownloadManager" "/v" "LastCheckQU""
 "%HKLM%"
 ) do for /f "tokens=* delims=" %%A in ("%%~#") do (
-set "reg="%%~A"" &reg query !reg! %nul% && call :del
+set "reg="%%~A"" ® query !reg! %nul% && call :del
 )
 
 if not %HKCUsync%==1 for %%# in (
@@ -464,7 +464,7 @@ if not %HKCUsync%==1 for %%# in (
 ""HKU\%_sid%\Software\DownloadManager" "/v" "ptrk_scdt""
 ""HKU\%_sid%\Software\DownloadManager" "/v" "LastCheckQU""
 ) do for /f "tokens=* delims=" %%A in ("%%~#") do (
-set "reg="%%~A"" &reg query !reg! %nul% && call :del
+set "reg="%%~A"" ® query !reg! %nul% && call :del
 )
 
 exit /b
